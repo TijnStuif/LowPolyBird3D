@@ -9,19 +9,17 @@ public class Player : MonoBehaviour
     private float movementX;
     private float movementY;
     private float movementZ;
-    [SerializeField] private float speed;
+    [SerializeField] private float speed = 5;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        speed = 5;
-        Vector3 movement = new Vector3(movementX, movementY, movementZ);
-        rb.AddForce(movement * speed);
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-
+        Vector3 movement = new Vector3(movementX, movementY, movementZ);
+        rb.AddForce(movement * speed);
     }
 
     void OnMove(InputValue movementValue)

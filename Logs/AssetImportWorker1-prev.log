@@ -778,7 +778,6 @@ Unloading 19 unused Assets / (316.0 KB). Loaded Objects now: 5811.
 Memory consumption went from 181.1 MB to 180.8 MB.
 Total: 10.340400 ms (FindLiveObjects: 0.313900 ms CreateObjectMapping: 0.136600 ms MarkObjects: 9.805600 ms  DeleteObjects: 0.083000 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -792,3 +791,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 75118.970555 seconds.
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(49a4548ae8bdfc0469a05b871af66b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(49a4548ae8bdfc0469a05b871af66b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a05fb561241fc0a12ea3b3fecc53ae3d') in 0.352577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20

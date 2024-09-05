@@ -832,7 +832,6 @@ Unloading 19 unused Assets / (316.1 KB). Loaded Objects now: 5811.
 Memory consumption went from 181.2 MB to 180.9 MB.
 Total: 9.799700 ms (FindLiveObjects: 0.284500 ms CreateObjectMapping: 0.132000 ms MarkObjects: 9.311500 ms  DeleteObjects: 0.070600 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -846,3 +845,23 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 75194.440025 seconds.
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(49a4548ae8bdfc0469a05b871af66b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(49a4548ae8bdfc0469a05b871af66b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9545842808e1128676dc0035b6e863f5') in 0.463853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 4.324425 seconds.
+  path: Assets/Materials/Skybox.mat
+  artifactKey: Guid(49a4548ae8bdfc0469a05b871af66b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Skybox.mat using Guid(49a4548ae8bdfc0469a05b871af66b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '68b696d67360461912c945c6e97fbcc2') in 0.018263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2

@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody player;
     private Vector2 playerInput;
     [SerializeField] private float speed;
+    [SerializeField] new private Camera camera;
     // Start is called before the first frame update
     void Start()
     {

@@ -20,7 +20,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     {
         if (trigger.gameObject.CompareTag("BirdKiller"))
         {
-            player.velocity = new Vector3(0, 0, -100);
+            Debug.Log("yo ded");
         }
     }
 }

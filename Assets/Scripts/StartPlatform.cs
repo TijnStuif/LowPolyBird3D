@@ -5,7 +5,8 @@ using UnityEngine.UIElements;
 
 public class StartPlatform : MonoBehaviour
 {
-    [SerializeField] Transform startPlatform;
+    [SerializeField] private Transform startPlatform;
+    [SerializeField] private GameObject player;
     private float startLevelCounter = 0;
     private float movementMultiplier = -0.33f;
     private float platformMovementDown;
@@ -13,14 +14,15 @@ public class StartPlatform : MonoBehaviour
     void Start()
     {
         platformMovementDown = startPlatform.position.y * movementMultiplier * Time.deltaTime;
+        player.transform.SetParent(transform);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log(startPlatform.position.y);
         if (startLevelCounter >= 3)
         {
+            player.transform.SetParent(null);
             Destroy(gameObject);
         }
         startLevelCounter += Time.deltaTime;

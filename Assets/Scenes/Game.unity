@@ -433,6 +433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 929793175}
+  - component: {fileID: 929793176}
   m_Layer: 0
   m_Name: Obstacles
   m_TagString: BirdKiller
@@ -455,6 +456,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &929793176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929793174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d459c1cf18ede44fb778fb000ce9208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4516440505735480116}
+  material: {fileID: 2100000, guid: c8e83c66c6f8b5c44bf18b689cf8c75d, type: 2}
+  alpha: 1
 --- !u!1 &1152362092
 GameObject:
   m_ObjectHideFlags: 0

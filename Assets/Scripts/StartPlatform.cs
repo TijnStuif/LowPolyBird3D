@@ -14,7 +14,6 @@ public class StartPlatform : MonoBehaviour
     void Start()
     {
         platformMovementDown = startPlatform.position.y * movementMultiplier * Time.deltaTime;
-        player.transform.SetParent(transform);
     }
 
     // Update is called once per frame

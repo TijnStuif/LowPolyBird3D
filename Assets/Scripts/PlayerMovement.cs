@@ -18,8 +18,13 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         if (player == null) return;
+        Vector3 viewPos = camera.WorldToViewportPoint(player.transform.position);
+        if (viewPos.x < 0.2 || viewPos.x > 0.8 || viewPos.y < 0.2 || viewPos.y > 0.8)
+        {
+            player.position = new Vector3(0, 5, player.transform.position.z);
+        }
         Vector3 movement = new Vector3(playerInput.x, 0, playerInput.y);
-        player.AddForce(movement * speed * Time.fixedDeltaTime);
+        player.AddForce(speed * Time.fixedDeltaTime * movement);
     }
 
     public void OnMove(InputAction.CallbackContext context)

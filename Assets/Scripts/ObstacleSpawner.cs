@@ -58,6 +58,7 @@ public class ObstacleSpawner : MonoBehaviour
         foreach (GameObject obstacle in obstaclesToRemove)
         {
             obstacles.Remove(obstacle);
+            speed += 1f;
         }
         obstaclesToRemove.Clear();
     }

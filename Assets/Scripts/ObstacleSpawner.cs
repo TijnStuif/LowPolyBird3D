@@ -8,12 +8,13 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private GameObject player;
     private List<GameObject> obstacles = new();
     private List<GameObject> obstaclesToRemove = new();
-    private float offset = 50f;
-    private float speed = 10f;
+    private float offset = 25f;
+    private float speed = 5f;
     // Start is called before the first frame update
     void Start()
     {
         SpawnFirstObstacle();
+        SpawnObstacle();
     }
 
     // Update is called once per frame
@@ -45,7 +46,7 @@ public class ObstacleSpawner : MonoBehaviour
 
     private void CheckDistanceToPlayer()
     {
-        if (obstacles.Count > 0 && obstacles[0].transform.position.z <= -20f)
+        if (obstacles.Count > 0 && obstacles[0].transform.position.z <= -2.5)
         {
             Destroy(obstacles[0]);
             obstaclesToRemove.Add(obstacles[0]);
@@ -58,7 +59,10 @@ public class ObstacleSpawner : MonoBehaviour
         foreach (GameObject obstacle in obstaclesToRemove)
         {
             obstacles.Remove(obstacle);
-            speed += 1f;
+            if (speed < 7.5f) 
+            {
+                speed += 0.5f;
+            } 
         }
         obstaclesToRemove.Clear();
     }

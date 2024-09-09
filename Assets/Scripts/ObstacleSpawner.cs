@@ -14,7 +14,6 @@ public class ObstacleSpawner : MonoBehaviour
     void Start()
     {
         SpawnFirstObstacle();
-        SpawnObstacle();
     }
 
     // Update is called once per frame

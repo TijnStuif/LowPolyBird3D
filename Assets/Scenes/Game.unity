@@ -288,6 +288,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefabs:
   - {fileID: 2253402735667737693, guid: 023238bcc1ed0c04088d46b1a23a7c8d, type: 3}
+  - {fileID: 2623527940306413935, guid: 842c258afcba35b408f56509343e213c, type: 3}
+  - {fileID: 4857843998819636472, guid: d4e19efb8417d1144800a0a517502ea0, type: 3}
+  - {fileID: 6163727719188724425, guid: d9046b841bdf04444952fa99a2dce08b, type: 3}
+  - {fileID: 1417021250514285021, guid: db73a50ce59c7ea4a9849d49718a6ab8, type: 3}
   obstacleParent: {fileID: 929793174}
   player: {fileID: 4516440505735480116}
 --- !u!1 &741643444

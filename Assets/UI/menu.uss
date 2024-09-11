@@ -15,6 +15,10 @@
     border-bottom-width: 3px;
     border-left-width: 3px;
     -unity-text-align: middle-center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .button:hover {
@@ -32,6 +36,7 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.86);
     -unity-background-scale-mode: scale-and-crop;
+    justify-content: center;
 }
 
 .menu-center-panel {
@@ -45,7 +50,7 @@
 .title-text {
     -unity-font: url("project://database/Assets/Graphics/NerkoOne-Regular.ttf?fileID=12800000&guid=b1a2cf57b8ae0e64fb3b5e6925d11a7e&type=3#NerkoOne-Regular");
     -unity-font-definition: initial;
-    font-size: 80px;
+    font-size: 100px;
     color: rgb(80, 255, 0);
     -unity-text-outline-width: 5px;
     -unity-text-outline-color: rgb(50, 144, 0);

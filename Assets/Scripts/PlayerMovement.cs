@@ -5,15 +5,17 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody player;
+    [SerializeField] private Rigidbody player;
     private Vector2 playerInput;
     [SerializeField] private float speed;
     [SerializeField] new private Camera camera;
+    Animator animator;
     private bool isOnScreen;
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -22,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = new Vector3(playerInput.x, 0, playerInput.y);
         CheckOnScreen();
         player.AddForce(speed * Time.fixedDeltaTime * movement);
+        DoSidewaysRotation();
+        CheckFallingVelocity();
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -36,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
         {
             player.velocity = new Vector3(player.velocity.x, 0, player.velocity.z);
             player.AddForce(Vector3.up * 5, ForceMode.Impulse);
+            animator.SetTrigger("TriggerJump");
+            animator.SetBool("IsJumping", true);
         }
     }
 
@@ -53,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
             if (isOnScreen)
             {
                 isOnScreen = false;
-                player.velocity = new Vector3(player.velocity.x * -1, player.velocity.y, player.velocity.z);
+                player.velocity = new Vector3(player.velocity.x * -0.5f, player.velocity.y, player.velocity.z);
             }
         }
         else if (viewPos.y < 0.22 || viewPos.y > 0.78)
@@ -61,8 +67,23 @@ public class PlayerMovement : MonoBehaviour
             if (isOnScreen)
             {
                 isOnScreen = false;
-                player.velocity = new Vector3(player.velocity.x, player.velocity.y * -1, player.velocity.z);
+                player.velocity = new Vector3(player.velocity.x, player.velocity.y * -0.5f, player.velocity.z);
             }
         } else isOnScreen = true;
+    }
+
+    private void DoSidewaysRotation()
+    {
+        Vector3 newRotation = new(0, 0, player.velocity.x * Time.deltaTime * speed * -0.5f);
+        if (newRotation.z > 45 || newRotation.z < -45) return;
+        player.rotation = Quaternion.Euler(newRotation);
+    }
+
+    private void CheckFallingVelocity()
+    {
+        if (player.velocity.y <= -2)
+        {
+            animator.SetBool("IsJumping", false);
+        }
     }
 }

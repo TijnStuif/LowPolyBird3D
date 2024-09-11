@@ -7,23 +7,14 @@ using UnityEngine.SceneManagement;
 public class PlayerCollisionHandler : MonoBehaviour
 {
     [SerializeField] private Rigidbody player;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        player = GetComponent<Rigidbody>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
+    [SerializeField] AudioManager audioManager;
 
     private void OnCollisionEnter(Collision trigger)
     {
         if (trigger.gameObject.CompareTag("BirdKiller"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            audioManager.PlaySFX(audioManager.deathSound);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

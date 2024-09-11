@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 playerInput;
     [SerializeField] private float speed;
     [SerializeField] new private Camera camera;
+    [SerializeField] AudioManager audioManager;
     Animator animator;
     private bool isOnScreen;
     // Start is called before the first frame update
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
             player.AddForce(Vector3.up * 5, ForceMode.Impulse);
             animator.SetTrigger("TriggerJump");
             animator.SetBool("IsJumping", true);
+            audioManager.PlaySFX(audioManager.jumpSound);
         }
     }
 

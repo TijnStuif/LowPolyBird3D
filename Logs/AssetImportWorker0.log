@@ -308,3 +308,12 @@ Start importing Assets/UI/Score.uxml using Guid(521cd57f87249324bad5e03da1e8a0b9
  -> (artifact id: '18be7a63a0e13ccdae7a3aa2d2096a00') in 0.049756 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 174.544199 seconds.
+  path: Assets/UI/StartScreen.uxml
+  artifactKey: Guid(6f258a4c1a715344b807fa44fc775e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/StartScreen.uxml using Guid(6f258a4c1a715344b807fa44fc775e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7860698acdac1dbf6bd792956cdec26d') in 0.006692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5

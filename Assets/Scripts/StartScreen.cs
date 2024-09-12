@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
-using UnityEngine.EventSystems;
-using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class StartSceen : MonoBehaviour

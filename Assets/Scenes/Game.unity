@@ -296,6 +296,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 102421386}
   audioManager: {fileID: 2141708322}
+  scoreManager: {fileID: 1627491794}
+  endScreen: {fileID: 1970692167}
 --- !u!114 &102421389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1338,7 +1340,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIDocument: {fileID: 476664248}
-  startScreen: {fileID: 476664245}
   scoreScreen: {fileID: 1627491794}
 --- !u!4 &1382223372
 Transform:
@@ -1555,6 +1556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec7fa6855ac9c244f9e444f9be0fc9be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
   UIDocument: {fileID: 1515719025}
 --- !u!1 &1740244528
 GameObject:
@@ -1917,13 +1919,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1970692166}
+  - component: {fileID: 1970692167}
   m_Layer: 0
   m_Name: EndScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1970692166
 Transform:
   m_ObjectHideFlags: 0
@@ -1940,6 +1943,21 @@ Transform:
   - {fileID: 2027901909}
   m_Father: {fileID: 729014177}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1970692167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970692165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d860c14028480a4d98e7a210509c44b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIDocument: {fileID: 2027901910}
+  scoreScreen: {fileID: 1627491794}
+  audioManager: {fileID: 2141708322}
 --- !u!1 &1981339671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,7 +2039,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: feff5abc922e73c4285ee3d59a3897be, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: dc0befe4c7e2c4243bc4b59c704c7649,
+    type: 3}
   m_SortingOrder: 0
 --- !u!1 &2034500301
 GameObject:
@@ -2401,6 +2420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2359185890921556225}
   audioManager: {fileID: 0}
+  scoreManager: {fileID: 0}
+  endScreen: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

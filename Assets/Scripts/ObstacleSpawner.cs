@@ -16,7 +16,6 @@ public class ObstacleSpawner : MonoBehaviour
     void Start()
     {
         SpawnFirstObstacle();
-        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     // Update is called once per frame
@@ -61,6 +60,7 @@ public class ObstacleSpawner : MonoBehaviour
         foreach (GameObject obstacle in obstaclesToRemove)
         {
             scoreManager.ScoreLabelUpdate();
+            scoreManager.SaveScore();
             audioManager.PlaySFX(audioManager.scoreSound);
             obstacles.Remove(obstacle);
             if (speed < 7.5f) 

@@ -9,7 +9,6 @@ using UnityEngine.InputSystem;
 public class StartSceen : MonoBehaviour
 {
     [SerializeField] private UIDocument UIDocument;
-    [SerializeField] private GameObject startScreen;
     [SerializeField] private ScoreManager scoreScreen;
 
     private void OnEnable()
@@ -27,7 +26,7 @@ public class StartSceen : MonoBehaviour
         if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             Time.timeScale = 1;
-            startScreen.SetActive(false);
+            gameObject.SetActive(false);
             scoreScreen.Enable();
         }
     }

@@ -27,7 +27,7 @@
     -unity-text-outline-color: rgb(50, 144, 0);
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .text {

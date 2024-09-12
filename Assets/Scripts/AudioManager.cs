@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] private AudioSource musicSource;
+    public AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
     public AudioClip backgroundMusic;
     public AudioClip jumpSound;

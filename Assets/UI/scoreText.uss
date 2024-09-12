@@ -1,0 +1,13 @@
+.scoreText {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    -unity-font: url("project://database/Assets/Graphics/NerkoOne-Regular.ttf?fileID=12800000&guid=b1a2cf57b8ae0e64fb3b5e6925d11a7e&type=3#NerkoOne-Regular");
+    -unity-font-definition: initial;
+    -unity-text-align: upper-center;
+    color: rgb(160, 255, 153);
+    -unity-text-outline-color: rgb(23, 111, 0);
+    -unity-text-outline-width: 2px;
+    margin-top: 15%;
+}

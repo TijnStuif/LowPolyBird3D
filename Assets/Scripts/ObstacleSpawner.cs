@@ -6,6 +6,8 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private GameObject[] obstaclePrefabs;
     [SerializeField] private GameObject obstacleParent;
     [SerializeField] private GameObject player;
+    [SerializeField] private ScoreManager scoreManager;
+    [SerializeField] AudioManager audioManager;
     private List<GameObject> obstacles = new();
     private List<GameObject> obstaclesToRemove = new();
     private float offset = 25f;
@@ -14,6 +16,7 @@ public class ObstacleSpawner : MonoBehaviour
     void Start()
     {
         SpawnFirstObstacle();
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     // Update is called once per frame
@@ -57,6 +60,8 @@ public class ObstacleSpawner : MonoBehaviour
     {
         foreach (GameObject obstacle in obstaclesToRemove)
         {
+            scoreManager.ScoreLabelUpdate();
+            audioManager.PlaySFX(audioManager.scoreSound);
             obstacles.Remove(obstacle);
             if (speed < 7.5f) 
             {

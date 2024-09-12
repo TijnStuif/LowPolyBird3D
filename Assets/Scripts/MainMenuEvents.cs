@@ -13,7 +13,7 @@ public class MainMenuEvents : MonoBehaviour
     private void OnEnable()
     {
         Time.timeScale = 0;
-        startButton = UIDocument.rootVisualElement.Q<Button>("StartGameButton");
+        startButton = UIDocument.rootVisualElement.Q<Button>("StartButton");
         startButton.RegisterCallback<ClickEvent>(OnStartButtonClicked);
     }
 

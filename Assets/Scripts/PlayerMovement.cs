@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody player;
     private Vector2 playerInput;
     [SerializeField] private float speed;
-    [SerializeField] new private Camera camera;
+    [SerializeField] private Camera camera;
     [SerializeField] AudioManager audioManager;
     Animator animator;
     private bool isOnScreen;

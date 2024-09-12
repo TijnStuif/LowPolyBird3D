@@ -1,0 +1,40 @@
+.startScreen {
+    flex-grow: 0.5;
+    flex-basis: 1px;
+    flex-shrink: 1;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.86);
+    -unity-background-scale-mode: scale-and-crop;
+    justify-content: center;
+}
+
+.menu-center-panel {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 60px;
+    -unity-text-align: upper-center;
+}
+
+.title-text {
+    -unity-font: url("project://database/Assets/Graphics/NerkoOne-Regular.ttf?fileID=12800000&guid=b1a2cf57b8ae0e64fb3b5e6925d11a7e&type=3#NerkoOne-Regular");
+    -unity-font-definition: initial;
+    font-size: 100%;
+    color: rgb(80, 255, 0);
+    -unity-text-outline-width: 5px;
+    -unity-text-outline-color: rgb(50, 144, 0);
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.text {
+    -unity-font: url("project://database/Assets/Graphics/NerkoOne-Regular.ttf?fileID=12800000&guid=b1a2cf57b8ae0e64fb3b5e6925d11a7e&type=3#NerkoOne-Regular");
+    -unity-font-definition: initial;
+    font-size: 100%;
+    color: rgb(0, 255, 41);
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgba(28, 140, 0, 0);
+}

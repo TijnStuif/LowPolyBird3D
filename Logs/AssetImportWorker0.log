@@ -317,3 +317,12 @@ Start importing Assets/UI/StartScreen.uxml using Guid(6f258a4c1a715344b807fa44fc
  -> (artifact id: '7860698acdac1dbf6bd792956cdec26d') in 0.006692 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 208.588509 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(fd19e3710ceeba3419264500c75786f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(fd19e3710ceeba3419264500c75786f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '14bda5e2cffb8aededf4c5df25db587f') in 0.001810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

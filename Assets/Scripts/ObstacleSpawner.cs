@@ -11,7 +11,7 @@ public class ObstacleSpawner : MonoBehaviour
     private List<GameObject> obstacles = new();
     private List<GameObject> obstaclesToRemove = new();
     private float offset = 25f;
-    private float speed = 5f;
+    private float speed = 6f;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,9 +63,9 @@ public class ObstacleSpawner : MonoBehaviour
             scoreManager.SaveScore();
             audioManager.PlaySFX(audioManager.scoreSound);
             obstacles.Remove(obstacle);
-            if (speed < 7.5f) 
+            if (speed < 12f) 
             {
-                speed += 0.5f;
+                speed += 1f;
             } 
         }
         obstaclesToRemove.Clear();

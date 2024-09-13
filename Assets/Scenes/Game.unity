@@ -332,7 +332,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.4, y: 0.4, z: 0.4}
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &427567182
 GameObject:
@@ -656,10 +656,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefabs:
   - {fileID: 2253402735667737693, guid: 023238bcc1ed0c04088d46b1a23a7c8d, type: 3}
+  - {fileID: 5861623815371821422, guid: c01c7af69ca9fb843bb2afd0ae80e8d6, type: 3}
+  - {fileID: 1305944688081419811, guid: ecaa5fec6532d65488c73448911d0b77, type: 3}
   - {fileID: 2623527940306413935, guid: 842c258afcba35b408f56509343e213c, type: 3}
+  - {fileID: 8348104911390714312, guid: 2ac40adcf6d693647a01d045036c9227, type: 3}
+  - {fileID: 6745000268849930045, guid: 0586d83ee14b900478bb0a95716e6b75, type: 3}
   - {fileID: 4857843998819636472, guid: d4e19efb8417d1144800a0a517502ea0, type: 3}
+  - {fileID: 7870433228203722989, guid: 2dbb7894128570a46bbc2991f3046f2a, type: 3}
+  - {fileID: 5801591212103020153, guid: d012e3e5ad6a5744ebac76d7e59f2e12, type: 3}
   - {fileID: 6163727719188724425, guid: d9046b841bdf04444952fa99a2dce08b, type: 3}
+  - {fileID: 8740674933337634159, guid: 9af2da43642c7c646b4fa8f4a866b5a5, type: 3}
+  - {fileID: 4055258934368327225, guid: 05ca252374c3cc74e9465fbd3e6134d4, type: 3}
   - {fileID: 1417021250514285021, guid: db73a50ce59c7ea4a9849d49718a6ab8, type: 3}
+  - {fileID: 4457242466823224383, guid: 933d0b40bde025b4fb2ae70f76a372af, type: 3}
+  - {fileID: 6671660297438589686, guid: 447e4e7204e0e5140a379f982614e149, type: 3}
   obstacleParent: {fileID: 929793174}
   player: {fileID: 102421383}
   scoreManager: {fileID: 1627491794}

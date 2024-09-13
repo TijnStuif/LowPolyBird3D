@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody player;
     private Vector2 playerInput;
     [SerializeField] private float speed;
-    [SerializeField] private Camera camera;
+    [SerializeField] new private Camera camera;
     [SerializeField] AudioManager audioManager;
     Animator animator;
     private bool isOnScreen;
@@ -49,12 +49,12 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 viewPos = camera.WorldToViewportPoint(player.transform.position);
         // This if-statement prevents exploitation of the system by sending the player back on the screen if they leave it
-        if (viewPos.x < 0.2 || viewPos.x > 0.8 || viewPos.y < 0.2 || viewPos.y > 0.8)
+        if (viewPos.x < 0.08 || viewPos.x > 0.92 || viewPos.y < 0.08 || viewPos.y > 0.92)
         {
             player.position = new Vector3(0, 5, 0);
         }
         // These following if-statements cause the player to bounce from the walls
-        if (viewPos.x < 0.22 || viewPos.x > 0.78)
+        if (viewPos.x < 0.1 || viewPos.x > 0.9)
         {
             if (isOnScreen)
             {
@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
                 player.velocity = new Vector3(player.velocity.x * -0.5f, player.velocity.y, player.velocity.z);
             }
         }
-        else if (viewPos.y < 0.22 || viewPos.y > 0.78)
+        else if (viewPos.y < 0.1 || viewPos.y > 0.9)
         {
             if (isOnScreen)
             {

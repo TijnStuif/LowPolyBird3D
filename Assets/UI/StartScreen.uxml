@@ -1,9 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/menu.uss?fileID=7433441132597879392&amp;guid=44dbe3fcbaf73e84692d48d2f442fdd6&amp;type=3#menu" />
+    <Style src="project://database/Assets/UI/menuScreen.uss?fileID=7433441132597879392&amp;guid=44dbe3fcbaf73e84692d48d2f442fdd6&amp;type=3#menuScreen" />
     <ui:VisualElement class="startScreen" style="flex-grow: 1;">
         <ui:VisualElement class="menu-center-panel" style="flex-grow: 1;">
-            <ui:Label tabindex="-1" text="Low Poly Bird 3D" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GameName" class="title-text" style="font-size: 50%; -unity-text-outline-width: 2px;" />
-            <ui:Label tabindex="-1" text="Press Space Bar to start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartRequirementText" style="-unity-font: url(&quot;project://database/Assets/Graphics/NerkoOne-Regular.ttf?fileID=12800000&amp;guid=b1a2cf57b8ae0e64fb3b5e6925d11a7e&amp;type=3#NerkoOne-Regular&quot;); -unity-font-definition: initial; font-size: 30%; color: rgb(71, 255, 0); -unity-text-outline-color: rgb(44, 135, 61); -unity-text-outline-width: 2px;" />
+            <ui:Label tabindex="-1" text="Low Poly Bird 3D" parse-escape-sequences="true" display-tooltip-when-elided="true" name="GameName" class="title-text" style="font-size: 100%; -unity-text-outline-width: 2px;" />
+            <ui:Label tabindex="-1" text="Press Space Bar to start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartRequirementText" style="-unity-font: url(&quot;project://database/Assets/Graphics/NerkoOne-Regular.ttf?fileID=12800000&amp;guid=b1a2cf57b8ae0e64fb3b5e6925d11a7e&amp;type=3#NerkoOne-Regular&quot;); -unity-font-definition: initial; font-size: 60%; color: rgb(71, 255, 0); -unity-text-outline-color: rgb(44, 135, 61); -unity-text-outline-width: 2px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
